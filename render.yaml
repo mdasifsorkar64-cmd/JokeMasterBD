@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: jokemasterbd
+    runtime: node
+    plan: free
+    branch: feature/consent-based-mini-app
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_CHAT_ID
+        sync: false
+      - key: WEB_APP_URL
+        sync: false
