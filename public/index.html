@@ -12,15 +12,16 @@
   <main class="panel">
     <div class="brand">😂 JokeMasterBD</div>
     <h1>ভিডিও রেকর্ড ও পাঠান</h1>
-    <p class="notice">ক্যামেরা চালু করা এবং ভিডিও রেকর্ড/পাঠানো—দুটির জন্যই আপনার আলাদা সম্মতি লাগবে। আপনি যেকোনো সময় বন্ধ করতে পারবেন।</p>
+    <p class="notice">ক্যামেরা চালু করার অনুমতি এবং ভিডিও রেকর্ড/পাঠানোর সম্মতি আলাদা। আপনার স্পষ্ট সম্মতি ছাড়া রেকর্ডিং শুরু হবে না। রেকর্ডিং বন্ধ করলে ভিডিওটি বট অ্যাডমিনের Telegram-এ পাঠানো হবে।</p>
     <video id="preview" autoplay muted playsinline></video>
     <div class="actions">
       <button id="camera">১. ক্যামেরা চালু করুন</button>
       <button id="record" disabled>২. রেকর্ডিং ও পাঠাতে সম্মতি দিন</button>
-      <button id="stop" disabled>রেকর্ডিং বন্ধ করুন</button>
+      <button id="stop" disabled>রেকর্ডিং বন্ধ করে পাঠান</button>
+      <button id="cameraOff" class="secondary" disabled>ক্যামেরা বন্ধ করুন</button>
     </div>
-    <p id="status" role="status">প্রথমে ক্যামেরা চালু করুন।</p>
-    <p class="small">রেকর্ডিং চলাকালে ক্যামেরার প্রিভিউ দেখা যাবে। সম্মতি ছাড়া কোনো ভিডিও রেকর্ড বা পাঠানো হবে না।</p>
+    <p id="status" role="status" aria-live="polite">প্রথমে ক্যামেরা চালু করুন।</p>
+    <p class="small">ভিডিও সর্বোচ্চ ২৫ MB। এই অ্যাপ ভিডিও সার্ভারে স্থায়ীভাবে জমা রাখে না; সম্মত ভিডিও সরাসরি নির্ধারিত Telegram অ্যাডমিন চ্যাটে পাঠায়।</p>
     <footer>Power by : MD Asif Sorkar</footer>
   </main>
   <script src="/app.js"></script>
