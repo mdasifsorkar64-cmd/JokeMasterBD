@@ -111,8 +111,9 @@ if (bot) {
       { reply_markup: keyboard }
     );
   });
+  bot.command('id', ctx => ctx.reply(`এই চ্যাটের ID: ${ctx.chat.id}`));
   bot.command('help', ctx => ctx.reply(
-    'ভিডিও পাঠাতে /start লিখে Mini App খুলুন। ক্যামেরা অনুমতি এবং রেকর্ড/পাঠানোর সম্মতি আলাদা।'
+    'ভিডিও পাঠাতে /start লিখে Mini App খুলুন। নিজের Telegram chat ID জানতে /id লিখুন। ক্যামেরা ও রেকর্ডিংয়ের সম্মতি আলাদা।'
   ));
   bot.catch(error => console.error('Bot error:', error.message));
   bot.start().catch(error => console.error('Bot startup error:', error.message));
