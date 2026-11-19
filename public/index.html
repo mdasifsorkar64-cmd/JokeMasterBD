@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>JokeMasterBD</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="panel">
+    <div class="brand">😂 JokeMasterBD</div>
+    <h1>ভিডিও রেকর্ড ও পাঠান</h1>
+    <p class="notice">ক্যামেরা চালু করা এবং ভিডিও রেকর্ড/পাঠানো—দুটির জন্যই আপনার আলাদা সম্মতি লাগবে। আপনি যেকোনো সময় বন্ধ করতে পারবেন।</p>
+    <video id="preview" autoplay muted playsinline></video>
+    <div class="actions">
+      <button id="camera">১. ক্যামেরা চালু করুন</button>
+      <button id="record" disabled>২. রেকর্ডিং ও পাঠাতে সম্মতি দিন</button>
+      <button id="stop" disabled>রেকর্ডিং বন্ধ করুন</button>
+    </div>
+    <p id="status" role="status">প্রথমে ক্যামেরা চালু করুন।</p>
+    <p class="small">রেকর্ডিং চলাকালে ক্যামেরার প্রিভিউ দেখা যাবে। সম্মতি ছাড়া কোনো ভিডিও রেকর্ড বা পাঠানো হবে না।</p>
+    <footer>Power by : MD Asif Sorkar</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
